@@ -1,0 +1,43 @@
+GET http://localhost:5000/api/products/
+
+################################
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "product_id":"2",
+  "title":"Watch Product 01",
+  "images": [
+      "https://www.apple.com/newsroom/images/product/watch/standard/Apple_delivers-apple-watch-series-6_09152020_big.jpg.large.jpg",
+      "https://m.media-amazon.com/images/G/01/appcore/watch/S6-SE-launch/Apple_Watch_S6_GPS_Product_Page_L__en-US_01._CB413774429_.jpg"
+  ],
+  "description": "Some description hehe",
+  "content": "Some content hehe",
+  "colors": ["red", "blue", "black"],
+  "sizes": ["XL", "L", "M", "XM", "LX"],
+  "price": 399
+}
+
+################################
+DELETE  http://localhost:5000/api/products/6113935ba162d83a308fda2e
+
+################################
+PUT http://localhost:5000/api/products/61138efef19cac47a0f38f5b
+Content-Type: application/json
+
+{
+  "product_id":"2",
+  "title":"Watch Product 02 Update",
+  "images": [
+      "https://www.apple.com/newsroom/images/product/watch/standard/Apple_delivers-apple-watch-series-6_09152020_big.jpg.large.jpg",
+      "https://m.media-amazon.com/images/G/01/appcore/watch/S6-SE-launch/Apple_Watch_S6_GPS_Product_Page_L__en-US_01._CB413774429_.jpg"
+  ],
+  "description": "Some description hehe",
+  "content": "Some content hehe",
+  "colors": ["red", "blue", "black"],
+  "sizes": ["XL", "L", "M", "XM", "LX"],
+  "price": 999
+}
+
+################################
+GET http://localhost:5000/api/products/61138efef19cac47a0f38f5b
